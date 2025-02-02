@@ -12,7 +12,7 @@ const ovo = OvoFont({
 });
 
 export const metadata = {
-  title: "Portfolio",
+  title: "Manjay's Portfolio",
   description: "Made my Manjay Kumar",
 };
 

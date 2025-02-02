@@ -14,6 +14,7 @@ const Navbar = () => {
   const closeMenu = () => {
     sideMenuRef.current.style.transform = "translateX(16rem)";
   };
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (scrollY > 50) {
@@ -23,6 +24,7 @@ const Navbar = () => {
       }
     });
   }, []);
+
   return (
     <>
       <div className=" fixed top-0 right-0 w-11/12 -z-10">
@@ -75,12 +77,7 @@ const Navbar = () => {
           <button>
             <Image src={assets.moon_icon} alt="" className=" w-6" />
           </button>
-          {/* <a
-            href="#contact"
-            className=" hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo"
-          >
-            Contact <Image src={assets.arrow_icon} alt="" className=" w-3" />
-          </a> */}
+
           <div className=" hidden md:block">
             <SocialHandles />
           </div>

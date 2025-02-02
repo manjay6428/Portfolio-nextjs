@@ -1,21 +1,4 @@
-import user_image from "./user-image.png";
-import code_icon from "./code-icon.png";
-import code_icon_dark from "./code-icon-dark.png";
-import edu_icon from "./edu-icon.png";
-import edu_icon_dark from "./edu-icon-dark.png";
-import project_icon from "./project-icon.png";
-import project_icon_dark from "./project-icon-dark.png";
-import vscode from "./vscode.png";
-import firebase from "./firebase.png";
-import figma from "./figma.png";
-import git from "./git.png";
-import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
-import logo from "./logo.png";
-import logo_dark from "./logo_dark.png";
-import mail_icon from "./mail_icon.png";
-import mail_icon_dark from "./mail_icon_dark.png";
-import profile_img from "./profile-img.png";
 import download_icon from "./download-icon.png";
 import hand_icon from "./hand-icon.png";
 import header_bg_color from "./header-bg-color.png";
@@ -27,10 +10,6 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
-import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
@@ -49,30 +28,14 @@ import {
   FaCode,
   FaAppStore,
 } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
 import { RiNextjsFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
 import { SiTypescript, SiJira, SiNeo4J, SiExpress } from "react-icons/si";
 import { PiFileCppDuotone } from "react-icons/pi";
 
 export const assets = {
-  user_image,
-  code_icon,
-  code_icon_dark,
-  edu_icon,
-  edu_icon_dark,
-  project_icon,
-  project_icon_dark,
-  vscode,
-  firebase,
-  figma,
-  git,
-  mongodb,
   right_arrow_white,
-  logo,
-  logo_dark,
-  mail_icon,
-  mail_icon_dark,
-  profile_img,
   download_icon,
   hand_icon,
   header_bg_color,
@@ -84,10 +47,6 @@ export const assets = {
   menu_white,
   close_black,
   close_white,
-  web_icon,
-  mobile_icon,
-  ui_icon,
-  graphics_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
@@ -97,6 +56,67 @@ export const assets = {
   manjay_work,
 };
 export const accessKey = "b26f71e8-b96d-4368-aa39-0eb7b6128c1c";
+
+export const projects = [
+  {
+    id: 1,
+    name: "Restaurent app using React+Redux",
+    description:
+      "Fully responsive website hungerBuddy build with React+redux persist which stores cart items data at local storage. Download it from playStore.",
+    type: "fullStack",
+    imageUrl: "/hungerBudddy.jpg",
+    githubLink: "https://github.com/manjay6428/HungerBuddy",
+    demoLink: "https://hungerbuddy.netlify.app/",
+  },
+  {
+    id: 2,
+    name: "Recipe On The Go",
+    description: "complete recipe to make you a home-made Chef",
+    type: "fullStack",
+    imageUrl: "/recipeOnTheGo.jpg",
+    githubLink: "https://github.com/manjay6428/RecipeMaker",
+    demoLink: "",
+  },
+  {
+    id: 3,
+    name: "Food delivering website",
+    description:
+      "Fully responsive website myFamilia where you can order food from restaurants anytime anywhere. Download it from playStore.",
+    type: "frontend",
+    imageUrl: "/myFamilia.jpg",
+    githubLink: "https://github.com/manjay6428/myFamilia",
+    demoLink: "https://myfamilia.netlify.app/",
+  },
+  {
+    id: 4,
+    name: "Corona Virus Tracker",
+    description: "Check all the covid related data and be updated and alert.",
+    type: "backend",
+    imageUrl: "/covidTracker.jpg",
+    githubLink: "https://github.com/manjay6428/covid19tracker",
+    demoLink: "https://covid19trackernet.netlify.app/",
+  },
+  {
+    id: 5,
+    name: "Bulb Meter",
+    description:
+      "Save Electricity,save Earth! check your daily consumptions and save electricity.",
+    type: "frontend",
+    imageUrl: "/bulbMeter.jpg",
+    githubLink: "https://github.com/manjay6428/bulb-meter",
+    demoLink: "https://billmeter.netlify.app/",
+  },
+  {
+    id: 6,
+    name: "Questionnaire website",
+    description:
+      "A Questionnaire website developed for a client with questions-ready for IAS Preparation",
+    type: "frontend",
+    imageUrl: "/questionnaireWebsite.jpg",
+    githubLink: "https://github.com/manjay6428/Questionnaire-website",
+    demoLink: "https://quizappio11.netlify.app/",
+  },
+];
 
 export const education = [
   {
@@ -115,6 +135,7 @@ export const education = [
     year: "2015 - 2016",
   },
 ];
+
 export const workHistory = [
   {
     company: "Byteridge",
@@ -152,6 +173,7 @@ export const skills = [
   { name: "Neo4j", icon: <SiNeo4J size={30} /> },
   { name: "Jira", icon: <SiJira size={30} /> },
   { name: "C++", icon: <PiFileCppDuotone size={30} /> },
+  { name: "VS Code", icon: <VscVscode size={30} /> },
 ];
 
 export const services = [
@@ -216,26 +238,5 @@ export const testimonials = [
     feedback:
       "A game-changer! The results were beyond what I had imagined. Looking forward to working together again!",
     image: "https://randomuser.me/api/portraits/women/3.jpg",
-  },
-];
-
-export const infoList = [
-  {
-    icon: assets.code_icon,
-    iconDark: assets.code_icon_dark,
-    title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
-  },
-  {
-    icon: assets.edu_icon,
-    iconDark: assets.edu_icon_dark,
-    title: "Education",
-    description: "B.Tech in Computer Science",
-  },
-  {
-    icon: assets.project_icon,
-    iconDark: assets.project_icon_dark,
-    title: "Projects",
-    description: "Built more than 5 projects",
   },
 ];

@@ -4,10 +4,12 @@ import React, { useState } from "react";
 
 const Contact = () => {
   const [result, setResult] = useState("");
+  const [resultType, setResultType] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
+    setResultType("");
     const formData = new FormData(event.target);
 
     formData.append("access_key", accessKey);
@@ -21,11 +23,17 @@ const Contact = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
+      setResultType("success");
       event.target.reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
+      setResultType("error");
     }
+    setTimeout(() => {
+      setResult("");
+      setResultType("");
+    }, 5000);
   };
   return (
     <div
@@ -39,7 +47,7 @@ const Contact = () => {
         feedback , please use the form below .
       </p>
       <form onSubmit={onSubmit} className=" max-w-2xl mx-auto">
-        <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter your name"
@@ -69,7 +77,17 @@ const Contact = () => {
           Submit now
           <Image src={assets.right_arrow_white} alt="" className=" w-4" />
         </button>
-        <p className=" mt-4">{result}</p>
+        <p
+          className={`mt-4 text-xl ${
+            resultType === "success"
+              ? "text-green-500"
+              : resultType === "error"
+              ? "text-red-500"
+              : ""
+          }`}
+        >
+          {result}
+        </p>
       </form>
     </div>
   );
