@@ -46,6 +46,8 @@ import {
   FaJsSquare,
   FaGithub,
   FaFigma,
+  FaCode,
+  FaAppStore,
 } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
@@ -94,10 +96,11 @@ export const assets = {
   manjay_logo,
   manjay_work,
 };
+export const accessKey = "b26f71e8-b96d-4368-aa39-0eb7b6128c1c";
 
 export const education = [
   {
-    degree: "Bachelor's in Computer Science",
+    degree: "B.Tech in Computer Science & Engineering",
     institution: "Punjab Technical University",
     year: "2019 - 2023",
   },
@@ -151,32 +154,68 @@ export const skills = [
   { name: "C++", icon: <PiFileCppDuotone size={30} /> },
 ];
 
-export const serviceData = [
+export const services = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: <FaCode size={30} />,
+    title: "Web Design",
     description:
-      "Mobile app development involves creating software for mobile devices...",
-    link: "",
+      "Creating beautiful and eye-sighting websites designs,attractive layouts and to improve the user experience of the viewer.",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: <FaCode size={30} />,
+    title: "UI/UX Design",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
+      "create user-friendly interfaces that enable users to understand how to use complex technical products with the latest technologies.",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
+    icon: <FaAppStore size={30} />,
+    title: "App Design",
+    description:
+      "Designing an application,responsible for developing and maintaining application programs.",
+  },
+  {
+    icon: <FaCode size={30} />,
+    title: "Branding",
+    description:
+      "Building brand identities that connect with people through creative visual designs and clear communication.",
+  },
+  {
+    icon: <FaCode size={30} />,
+    title: "Digital Marketing",
+    description:
+      "Helping businesses grow with tailored digital marketing strategies, SEO, content creation, and social media management.",
+  },
+  {
+    icon: <FaCode size={30} />,
+    title: "E-Commerce Solutions",
+    description:
+      "Building customized e-commerce platforms to help businesses sell products online, with secure payments and easy navigation.",
+  },
+];
+export const testimonials = [
+  {
+    id: 1,
+    name: "John Doe",
+    role: "Software Engineer",
+    feedback:
+      "This service was amazing! It truly exceeded my expectations. I highly recommend it to anyone looking for quality work.",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    role: "Product Designer",
+    feedback:
+      "The experience was fantastic. The attention to detail and professionalism were outstanding.",
+    image: "https://randomuser.me/api/portraits/women/2.jpg",
+  },
+  {
+    id: 3,
+    name: "Alice Johnson",
+    role: "Marketing Manager",
+    feedback:
+      "A game-changer! The results were beyond what I had imagined. Looking forward to working together again!",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
   },
 ];
 
@@ -199,12 +238,4 @@ export const infoList = [
     title: "Projects",
     description: "Built more than 5 projects",
   },
-];
-
-export const toolsData = [
-  assets.vscode,
-  assets.firebase,
-  assets.mongodb,
-  assets.figma,
-  assets.git,
 ];

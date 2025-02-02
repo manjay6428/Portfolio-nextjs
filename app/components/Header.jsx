@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
+import { LuSend } from "react-icons/lu";
 
 const Header = () => {
   return (
@@ -27,15 +28,19 @@ const Header = () => {
       </p>
       <div className=" flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
-          href="#contact"
+          href="https://forms.gle/VEV46sc8cDVJSYx46"
+          target="_blank"
+          rel="noopener noreferrer"
           className=" px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2"
         >
-          Contact me{" "}
-          <Image src={assets.right_arrow_white} alt="" className=" w-4" />
+          Hire me
+          <LuSend size={20} />
         </a>
         <a
-          href="/sample-resume.pdf"
+          href="https://drive.google.com/file/d/1AP3Z8dh8Y5OXbFoJYU-ODGAxBlZWkvCn/view"
           download
+          target="_blank"
+          rel="noopener noreferrer"
           className=" px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
         >
           My Resume <Image src={assets.download_icon} alt="" className=" w-4" />

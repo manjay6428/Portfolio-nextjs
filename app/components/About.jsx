@@ -21,7 +21,7 @@ const About = () => {
         <div className=" flex-1">
           <div className="max-w-4xl mx-auto py-12">
             {/* Tabs */}
-            <div className="flex justify-center border border-gray-400 rounded-full mt-6 mb-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex justify-center border border-gray-400 p-4 md:p-2 rounded-full mt-6 mb-6 shadow-lg hover:shadow-xl transition-shadow">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}

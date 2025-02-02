@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import SocialHandles from "./SocialHandles";
 
 const Navbar = () => {
   const sideMenuRef = useRef();
@@ -70,16 +71,19 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className=" flex items-center gap-4">
+        <div className=" flex items-center gap-4 md:gap-6 lg:gap-12">
           <button>
             <Image src={assets.moon_icon} alt="" className=" w-6" />
           </button>
-          <a
+          {/* <a
             href="#contact"
             className=" hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo"
           >
             Contact <Image src={assets.arrow_icon} alt="" className=" w-3" />
-          </a>
+          </a> */}
+          <div className=" hidden md:block">
+            <SocialHandles />
+          </div>
           <button className="block md:hidden ml-3" onClick={openMenu}>
             <Image src={assets.menu_black} alt="" className=" w-6" />
           </button>
