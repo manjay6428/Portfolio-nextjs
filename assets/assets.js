@@ -37,6 +37,20 @@ import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import manjayProfile from "./manjayProfile.png";
 import manjay_logo from "./manjay_logo.png";
+import manjay_work from "./manjay_work.png";
+
+import {
+  FaReact,
+  FaNodeJs,
+  FaCss3Alt,
+  FaJsSquare,
+  FaGithub,
+  FaFigma,
+} from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { DiMongodb } from "react-icons/di";
+import { SiTypescript, SiJira, SiNeo4J, SiExpress } from "react-icons/si";
+import { PiFileCppDuotone } from "react-icons/pi";
 
 export const assets = {
   user_image,
@@ -78,29 +92,63 @@ export const assets = {
   right_arrow_bold_dark,
   manjayProfile,
   manjay_logo,
+  manjay_work,
 };
 
-export const workData = [
+export const education = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    degree: "Bachelor's in Computer Science",
+    institution: "Punjab Technical University",
+    year: "2019 - 2023",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    degree: "Intermediate",
+    institution: "Gulab Memorial Inter college",
+    year: "2016 - 2018",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    degree: "Matriculation",
+    institution: "Assembly of God church school",
+    year: "2015 - 2016",
+  },
+];
+export const workHistory = [
+  {
+    company: "Byteridge",
+    role: "Software Development Engineer",
+    duration: "2023 - Present",
+    description: [
+      "Translated intricate Figma wireframes into responsive React components.",
+      "Refactored existing code and streamlined project workflows, enhancing overall efficiency by 25%.",
+      "Implemented React hooks and Redux to streamline data flow and reduce code complexity,",
+      "Developed UI for CTS , enabling 150+ employees to track their quarterly KPIs resulting in a 30% increase in engagement and a 20% reduction in manual errors",
+    ],
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    company: "Software Development Engineer Intern , Byteridge",
+    role: "Software Development Engineer Intern",
+    duration: "2022 - 2023",
+    description: [
+      "Built a mentee-mentor app, enabling 200+ mentees to book mentors and receive guidance, improving efficiency by 40%.",
+      "Managed a team of 5 to add real-time scheduling and communication, reducing response times by 30%.",
+      "Refactored UI, increasing usability and user satisfaction by 25%.",
+    ],
   },
+];
+export const skills = [
+  { name: "JavaScript", icon: <FaJsSquare size={30} /> },
+  { name: "React", icon: <FaReact size={30} /> },
+  { name: "Next.js", icon: <RiNextjsFill size={30} /> },
+  { name: "Tailwind CSS", icon: <FaCss3Alt size={30} /> },
+  { name: "Node.js", icon: <FaNodeJs size={30} /> },
+  { name: "MongoDB", icon: <DiMongodb size={30} /> },
+  { name: "Express", icon: <SiExpress size={30} /> },
+  { name: "TypeScript", icon: <SiTypescript size={30} /> },
+  { name: "Github", icon: <FaGithub size={30} /> },
+  { name: "Figma", icon: <FaFigma size={30} /> },
+  { name: "Neo4j", icon: <SiNeo4J size={30} /> },
+  { name: "Jira", icon: <SiJira size={30} /> },
+  { name: "C++", icon: <PiFileCppDuotone size={30} /> },
 ];
 
 export const serviceData = [
