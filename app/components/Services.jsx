@@ -16,14 +16,14 @@ const Services = () => {
     arrows: true,
     responsive: [
       {
-        breakpoint: 1024, // for screens wider than 1024px (tablet or larger)
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 3,
         },
       },
       {
-        breakpoint: 600, // for screens smaller than 600px (mobile)
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -42,7 +42,7 @@ const Services = () => {
         Node.js, delivering scalable solutions. Always learning and
         collaborating to build impactful software.
       </p>
-      {/* Service Cards */}
+
       <>
         <Slider {...settings}>
           {services.map((service, index) => (
