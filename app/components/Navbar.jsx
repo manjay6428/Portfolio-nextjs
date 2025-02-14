@@ -33,13 +33,9 @@ const Navbar = () => {
           isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
         }`}
       >
-        <a href="#top">
-          <Image
-            src={assets.manjay_logo}
-            alt=""
-            className=" w-28 mt-4 cursor-pointer mr-14"
-          />
-        </a>
+        <h1 href="#top" className=" font-Outfit font-semibold text-2xl">
+          Manjay.
+        </h1>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
             isScroll ? "" : "bg-white shadow-sm bg-opacity-50"
