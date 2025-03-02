@@ -14,6 +14,16 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      name: "MERN E-commerce",
+      description:
+        "A full-stack MERN application with Redux for state management, featuring user authentication, product management, and order processing",
+      type: "fullStack",
+      imageUrl: "/mernEcommerce.png",
+      githubLink: "https://github.com/manjay6428/MERN-E-commerce",
+      demoLink: "",
+    },
+    {
+      id: 2,
       name: "Restaurent app using React+Redux",
       description:
         "Fully responsive website hungerBuddy build with React+redux persist which stores cart items data at local storage. Download it from playStore.",
@@ -23,7 +33,7 @@ const Portfolio = () => {
       demoLink: "https://hungerbuddy.netlify.app/",
     },
     {
-      id: 2,
+      id: 3,
       name: "Recipe On The Go",
       description: "complete recipe to make you a home-made Chef",
       type: "fullStack",
@@ -32,7 +42,7 @@ const Portfolio = () => {
       demoLink: "",
     },
     {
-      id: 3,
+      id: 4,
       name: "Food delivering website",
       description:
         "Fully responsive website myFamilia where you can order food from restaurants anytime anywhere. Download it from playStore.",
@@ -42,7 +52,7 @@ const Portfolio = () => {
       demoLink: "https://myfamilia.netlify.app/",
     },
     {
-      id: 4,
+      id: 5,
       name: "Corona Virus Tracker",
       description: "Check all the covid related data and be updated and alert.",
       type: "backend",
@@ -51,7 +61,7 @@ const Portfolio = () => {
       demoLink: "https://covid19trackernet.netlify.app/",
     },
     {
-      id: 5,
+      id: 6,
       name: "Bulb Meter",
       description:
         "Save Electricity,save Earth! check your daily consumptions and save electricity.",
@@ -61,7 +71,7 @@ const Portfolio = () => {
       demoLink: "https://billmeter.netlify.app/",
     },
     {
-      id: 6,
+      id: 7,
       name: "Questionnaire website",
       description:
         "A Questionnaire website developed for a client with questions-ready for IAS Preparation",
