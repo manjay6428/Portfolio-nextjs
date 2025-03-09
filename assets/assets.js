@@ -66,7 +66,7 @@ export const projects = [
     type: "fullStack",
     imageUrl: "/mern.png",
     githubLink: "https://github.com/manjay6428/MERN-E-commerce",
-    demoLink: "",
+    demoLink: "https://mern-e-commerce-1-9nqg.onrender.com/",
   },
   {
     id: 2,
