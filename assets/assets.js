@@ -69,6 +69,16 @@ export const projects = [
     demoLink: "https://mern-e-commerce-1-9nqg.onrender.com/",
   },
   {
+    id: 8,
+    name: "CareerHub - Job Portal App (MERN Stack)",
+    description:
+      "A MERN job portal with Redux Toolkit, Multer, custom hooks, and protected routes for job applications, filtering, status updates, and profile management.",
+    type: "fullStack",
+    imageUrl: "/CareerHub.png",
+    githubLink: "https://github.com/manjay6428/CareerHub",
+    demoLink: "",
+  },
+  {
     id: 2,
     name: "Restaurent app using React+Redux",
     description:
