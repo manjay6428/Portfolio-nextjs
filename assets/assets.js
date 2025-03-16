@@ -76,7 +76,7 @@ export const projects = [
     type: "fullStack",
     imageUrl: "/CareerHub.png",
     githubLink: "https://github.com/manjay6428/CareerHub",
-    demoLink: "",
+    demoLink: "https://careerhub-1-pq7s.onrender.com/",
   },
   {
     id: 2,
